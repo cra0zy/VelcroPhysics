@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <RootNamespace>VelcroPhysics</RootNamespace>
   </PropertyGroup>
 
@@ -26,7 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.Portable" Version="3.6.0.1625" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.7">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
